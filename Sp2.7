@@ -51,6 +51,22 @@ ISprint2Task7V3
             return res;
         }
     }
+ISprint2Task7V5
+    {
+        public bool CheckDotInShadedArea(double x, double y)
+        {
+            bool res;
+            if(((Math.Exp(-x) < 1 && x > 0 && y > 0) || (Math.Exp(x) < 1 && x < 0 && y > 0)) && (Math.Pow(x, 2) <= y && y > 0 && y < 1))
+            {
+                res = true;
+            }
+            else
+            {
+                res = false;
+            }
+            return res;
+        }
+    }
 ISprint2Task7V6
     {
         public bool CheckDotInShadedArea(double x, double y)
